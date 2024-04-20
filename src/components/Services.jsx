@@ -1,6 +1,29 @@
 import { Card } from "flowbite-react";
 
 const Services = () => {
+  const services = [
+    {
+      id: 1,
+      title: "Membership Organisations",
+      description:
+        "Our membership management software provides full automation of membership renewals and payments",
+      image: "/src/assets/icons/member1.png",
+    },
+    {
+      id: 2,
+      title: "National Associations",
+      description:
+        "Our membership management software provides full automation of membership renewals and payments",
+      image: "/src/assets/icons/member2.png",
+    },
+    {
+      id: 3,
+      title: "Clubs And Groups",
+      description:
+        "Our membership management software provides full automation of membership renewals and payments",
+      image: "/src/assets/icons/member3.png",
+    },
+  ];
   return (
     <div className="md:px-14 py-16 max-w-screen-2xl mx-auto">
       <div className="text-center my-8">
@@ -28,49 +51,30 @@ const Services = () => {
           <p className="text-neutralDGray">Who is Nextcent suitable for?</p>
         </div>
         {/* card */}
-        <div className="mt-14 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:w-11/12 mx-auto gap-10">
-          <div>
-            <Card className="card-style">
-              <div className="bg-[#E8F5E9] h-14 w-14 mx-auto rounded-tl-3xl rounded-br-3xl">
-                <img src="src/assets/icons/card1.png" alt="" />
+        
+        <div className="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:w-11/12 mx-auto w-full">
+          {services.map((service) => (
+            <div
+              key={service.id}
+              className="px-4 py-8 text-center md:w-[300px] mx-auto md:h-80 rounded-md shadow cursor-pointer hover:-translate-y-5 hover:border-b-4 hover:border-indigo-800 transition-all duration-300 flex items-center h-full justify-center"
+            >
+              <div>
+                <div className="">
+                  <img
+                    src={service.image}
+                    alt=""
+                    className="bg-[#E8F5E9] mb-4 h-14 w-14 mx-auto rounded-tl-3xl rounded-br-3xl"
+                  />
+                  <h4 className="text-2xl font-bold text-neutralDGray mb-2 px-2">
+                    {service.title}
+                  </h4>
+                  <p className="text-sm text-neutralDGray">
+                    {service.description}
+                  </p>
+                </div>
               </div>
-              <h5 className="text-2xl font-bold tracking-tight text-neutralDGray">
-                Membership Organisations
-              </h5>
-              <p className="font-normal text-neutralDGray">
-                Our membership management software provides full automation of
-                membership renewals and payments
-              </p>
-            </Card>
-          </div>
-          <div>
-            <Card className="card-style">
-              <div className="bg-[#E8F5E9] h-14 w-14 mx-auto rounded-tl-3xl rounded-br-3xl">
-                <img src="src/assets/icons/card2.png" alt="" />
-              </div>
-              <h5 className="text-2xl font-bold tracking-tight text-neutralDGray">
-                National Associations
-              </h5>
-              <p className="font-normal text-neutralDGray">
-                Our membership management software provides full automation of
-                membership renewals and payments
-              </p>
-            </Card>
-          </div>
-          <div>
-            <Card className="card-style">
-              <div className="bg-[#E8F5E9] h-14 w-14 mx-auto rounded-tl-3xl rounded-br-3xl">
-                <img src="src/assets/icons/card3.png" alt="" />
-              </div>
-              <h5 className="text-2xl font-bold tracking-tight text-neutralDGray">
-                Clubs And Groups
-              </h5>
-              <p className="font-normal text-neutralDGray">
-                Our membership management software provides full automation of
-                membership renewals and payments
-              </p>
-            </Card>
-          </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>
