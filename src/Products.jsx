@@ -97,7 +97,7 @@ const Products = () => {
                       className="font-bold text-brandPrimary hover:text-neutral-600"
                       href="/"
                     >
-                      Meet all customers{" "}
+                      Meet all customers
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="17"
