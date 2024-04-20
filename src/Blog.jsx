@@ -1,6 +1,6 @@
 import blog1 from "../src/assets/blog/blog1.png"
-import blog2 from "../src/assets/blog/blog1.png"
-import blog3 from "../src/assets/blog/blog1.png"
+import blog2 from "../src/assets/blog/blog2.png"
+import blog3 from "../src/assets/blog/blog3.png"
 const Blog = () => {
   const blogs = [
     {
