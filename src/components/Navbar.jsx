@@ -38,7 +38,13 @@ const Navbar = () => {
 
   return (
     <header className=" w-full bg-white md:bg-transparent fixed top-0 right-o left-0">
-      <nav className={`py-4 lg:px-14 ${isSticky?"sticky top-0 left-0 right-0 border bg-white duration-300":""}`}>
+      <nav
+        className={`py-4 lg:px-14 ${
+          isSticky
+            ? "sticky top-0 left-0 right-0 border bg-white duration-300"
+            : ""
+        }`}
+      >
         <div className="flex justify-between items-center text-base gap-6">
           <a
             className="flex text-2xl font-semibold items-center space-x-3"
@@ -61,32 +67,39 @@ const Navbar = () => {
               </Link>
             ))}
           </ul>
-         {/* menu button for small device */}
-         <div className="md:hidden">
-            
-            <button onClick={toggleMenu} className="focus:outline-none focus:text-neutralGrey">
-            
-                {
-                    isMenuOpen?(<FaXmark className="h-6 w-6 text-neutralGrey"></FaXmark>):(<FaBars></FaBars>)
-                }
+          {/* menu button for small device */}
+          <div className="md:hidden">
+            <button
+              onClick={toggleMenu}
+              className="focus:outline-none focus:text-neutralGrey"
+            >
+              {isMenuOpen ? (
+                <FaXmark className="h-6 w-6 text-neutralGrey"></FaXmark>
+              ) : (
+                <FaBars></FaBars>
+              )}
             </button>
-         </div>
+          </div>
         </div>
       </nav>
       {/* nav items for mobile device  */}
-      <div className={`space-y-4 px-4 mt-16 bg-brandPrimary ${isMenuOpen?"block fixed top-0 left-0 right-0":"hidden"}`}>
-      {navitems.map(({ link, path }) => (
-              <Link
-                spy={true}
-                smooth={true}
-                offset={-100}
-                key={path}
-                to={path}
-                className="block text-base text-gray-900 hover:text-brandPrimary"
-              >
-                {link}
-              </Link>
-            ))}     
+      <div
+        className={`space-y-4 px-4 mt-16 bg-brandPrimary ${
+          isMenuOpen ? "block fixed top-0 left-0 right-0" : "hidden"
+        }`}
+      >
+        {navitems.map(({ link, path }) => (
+          <Link
+            spy={true}
+            smooth={true}
+            offset={-100}
+            key={path}
+            to={path}
+            className="block text-base text-gray-900 hover:text-brandPrimary"
+          >
+            {link}
+          </Link>
+        ))}
       </div>
     </header>
   );

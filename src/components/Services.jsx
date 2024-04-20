@@ -1,5 +1,3 @@
-import { Card } from "flowbite-react";
-
 const Services = () => {
   const services = [
     {
@@ -25,7 +23,7 @@ const Services = () => {
     },
   ];
   return (
-    <div className="md:px-14 py-16 max-w-screen-2xl mx-auto">
+    <div className="md:px-14 py-16 max-w-screen-2xl mx-auto" id="service">
       <div className="text-center my-8">
         <h2 className="text-4xl text-neutralDGray font-semibold mb-2">
           Our Client
@@ -51,7 +49,7 @@ const Services = () => {
           <p className="text-neutralDGray">Who is Nextcent suitable for?</p>
         </div>
         {/* card */}
-        
+
         <div className="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:w-11/12 mx-auto w-full">
           {services.map((service) => (
             <div
