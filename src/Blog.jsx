@@ -1,20 +1,23 @@
+import blog1 from "../src/assets/blog/blog1.png"
+import blog2 from "../src/assets/blog/blog1.png"
+import blog3 from "../src/assets/blog/blog1.png"
 const Blog = () => {
   const blogs = [
     {
       id: 1,
       title: "Creating Streamlined Safeguarding Processes with OneRen",
-      image: "/src/assets/blog/blog1.png",
+      image: blog1,
     },
     {
       id: 2,
       title:
         "What are your safeguarding responsibilities and how can you manage them?",
-      image: "/src/assets/blog/blog2.png",
+      image: blog2,
     },
     {
       id: 3,
       title: "Revamping the Membership Model with Triathlon Australia",
-      image: "/src/assets/blog/blog3.png",
+      image: blog3,
     },
   ];
   return (
