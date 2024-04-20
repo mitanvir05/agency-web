@@ -1,4 +1,10 @@
 import about1 from "../assets/about/about1.png";
+import member1 from "../assets/icons/member1.png";
+import member2 from "../assets/icons/member2.png";
+import member3 from "../assets/icons/member3.png";
+import member4 from "../assets/icons/member4.png";
+
+
 const About = () => {
   return (
     <div>
@@ -29,7 +35,7 @@ const About = () => {
         <div className="flex flex-col md:flex-row justify-between gap-8">
           <div className="md:w-1/2">
             <h1 className="text-4xl text-neutralDGray font font-semibold mb-4 md:w-2/3">
-              Helping a <br />{" "}
+              Helping a <br />
               <span className="text-brandPrimary">
                 local business reinvent itself
               </span>
@@ -42,14 +48,14 @@ const About = () => {
           <div className="md:w-1/2 mx-auto flex sm:flex-row sm:items-center justify-around gap-12">
             <div className="space-y-8">
               <div className="flex items-center gap-4">
-                <img src="/src/assets/icons/member1.png" alt="" />
+                <img src={member1} alt="" />
                 <div>
                     <h4 className="text-2xl text-neutralDGray font-semibold">2,245,341</h4>
                     <p>Members</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
-                <img src="/src/assets/icons/member2.png" alt="" />
+              <img src={member2} alt="" />
                 <div>
                     <h4 className="text-2xl text-neutralDGray font-semibold">46,328</h4>
                     <p>Club</p>
@@ -58,14 +64,14 @@ const About = () => {
             </div>
             <div className="space-y-8">
               <div className="flex items-center gap-4">
-                <img src="/src/assets/icons/member3.png" alt="" />
+                <img src={member3} alt="" />
                 <div>
                     <h4 className="text-2xl text-neutralDGray font-semibold">828,867</h4>
                     <p>Event Booking</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
-                <img src="/src/assets/icons/member4.png" alt="" />
+                <img src={member4} alt="" />
                 <div>
                     <h4 className="text-2xl text-neutralDGray font-semibold">1,926,436</h4>
                     <p>Payments</p>

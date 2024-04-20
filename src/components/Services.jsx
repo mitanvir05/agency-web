@@ -1,4 +1,12 @@
+import company1 from '../assets/icons/company1.png';
+import company2 from '../assets/icons/company2.png';
+import company3 from '../assets/icons/company3.png';
+import company4 from '../assets/icons/company4.png';
+import company5 from '../assets/icons/company5.png';
+import company6 from '../assets/icons/company6.png';
+import company7 from '../assets/icons/company7.png';
 const Services = () => {
+  
   const services = [
     {
       id: 1,
@@ -33,13 +41,14 @@ const Services = () => {
         </p>
         {/* company logo */}
         <div className="my-12 flex flex-wrap justify-between items-center gap-8">
-          <img src="src/assets/icons/company1.png" alt="" />
-          <img src="src/assets/icons/company2.png" alt="" />
-          <img src="src/assets/icons/company3.png" alt="" />
-          <img src="src/assets/icons/company4.png" alt="" />
-          <img src="src/assets/icons/company5.png" alt="" />
-          <img src="src/assets/icons/company6.png" alt="" />
-          <img src="src/assets/icons/company7.png" alt="" />
+          <img src={company1} alt="" />
+          <img src={company2} alt="" />
+          <img src={company3} alt="" />
+          <img src={company4} alt="" />
+          <img src={company5} alt="" />
+          <img src={company6} alt="" />
+          <img src={company7} alt="" />
+          
         </div>
         {/* services card */}
         <div className="mt-20 md:w-1/2 mx-auto text-center ">

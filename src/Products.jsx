@@ -1,6 +1,12 @@
 import mobile from "../src/assets/product/mobile login.png";
 import tesla from "../src/assets/product/tesla.png";
-
+import company1 from "../src/assets/icons/company1.png";
+import company2 from "../src/assets/icons/company2.png";
+import company3 from "../src/assets/icons/company3.png";
+import company4 from "../src/assets/icons/company4.png";
+import company5 from "../src/assets/icons/company5.png";
+import company6 from "../src/assets/icons/company6.png";
+import company7 from "../src/assets/icons/company7.png";
 const Products = () => {
   return (
     <div>
@@ -54,41 +60,31 @@ const Products = () => {
               <h5 className="text-brandPrimary text-xl font-semibold">
                 Tim Smith
               </h5>
-              <p className="text-neutralDGray mb-8">British Dragon Boat Racing Association</p>
+              <p className="text-neutralDGray mb-8">
+                British Dragon Boat Racing Association
+              </p>
               <div>
                 <div className="flex items-center gap-8 flex-wrap">
+                  <img src={company1} alt="" className="cursor-pointer" />
+                  <img src={company2} alt="" className="cursor-pointer" />
+                  <img src={company3} alt="" className="cursor-pointer" />
                   <img
-                    src="src/assets/icons/company1.png"
+                    src={company4}
                     alt=""
                     className="cursor-pointer"
                   />
                   <img
-                    src="src/assets/icons/company2.png"
+                    src={company5}
                     alt=""
                     className="cursor-pointer"
                   />
                   <img
-                    src="src/assets/icons/company3.png"
+                    src={company6}
                     alt=""
                     className="cursor-pointer"
                   />
                   <img
-                    src="src/assets/icons/company4.png"
-                    alt=""
-                    className="cursor-pointer"
-                  />
-                  <img
-                    src="src/assets/icons/company5.png"
-                    alt=""
-                    className="cursor-pointer"
-                  />
-                  <img
-                    src="src/assets/icons/company6.png"
-                    alt=""
-                    className="cursor-pointer"
-                  />
-                  <img
-                    src="src/assets/icons/company7.png"
+                    src={company7}
                     alt=""
                     className="cursor-pointer"
                   />
