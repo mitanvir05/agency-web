@@ -61,7 +61,7 @@ const Navbar = () => {
                 offset={-100}
                 key={path}
                 to={path}
-                className="block text-base text-gray-900 hover:text-brandPrimary"
+                className="block text-base cursor-pointer  text-gray-900 hover:text-brandPrimary"
               >
                 {link}
               </Link>
