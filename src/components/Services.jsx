@@ -5,6 +5,9 @@ import company4 from '../assets/icons/company4.png';
 import company5 from '../assets/icons/company5.png';
 import company6 from '../assets/icons/company6.png';
 import company7 from '../assets/icons/company7.png';
+import card1 from "../assets/icons/card1.png"
+import card2 from "../assets/icons/card2.png"
+import card3 from "../assets/icons/card3.png"
 const Services = () => {
   
   const services = [
@@ -13,21 +16,21 @@ const Services = () => {
       title: "Membership Organisations",
       description:
         "Our membership management software provides full automation of membership renewals and payments",
-      image: "/src/assets/icons/member1.png",
+      image: card1,
     },
     {
       id: 2,
       title: "National Associations",
       description:
         "Our membership management software provides full automation of membership renewals and payments",
-      image: "/src/assets/icons/member2.png",
+      image: card2,
     },
     {
       id: 3,
       title: "Clubs And Groups",
       description:
         "Our membership management software provides full automation of membership renewals and payments",
-      image: "/src/assets/icons/member3.png",
+      image: card3,
     },
   ];
   return (
