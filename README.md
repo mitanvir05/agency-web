@@ -32,7 +32,7 @@ Welcome to Nextcent! We are a digital agency specializing in creating stunning w
 * React-Icons
 
 ## Screenshots
-![App Screenshot](https://i.ibb.co/k5WKmPB/agency-website-lake-vercel-app-pc.png)
+![App Screenshot](https://i.ibb.co/LZs4YWP/agency-website.png)
 
 
 
